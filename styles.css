@@ -1,0 +1,11 @@
+:root {
+    font-size: 16px;
+}
+
+.rs-sidebar {
+    background-color: aliceblue;
+}
+
+.rs-main {
+    background-color: wheat;
+}
