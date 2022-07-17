@@ -1,19 +1,16 @@
+import './style.css';
+import './normalize.css';
+
 createPage();
 
 function createPage(){
     let content = document.getElementById('content');
 
-    const sidebar = createSidebar();
-    const main = createMain();
-
-    content.appendChild(sidebar);
-    content.appendChild(main);
-}
-
-function createSidebar(){
-    const sidebar = document.createElement('div')
+    // create sidebar
+    let sidebar = document.createElement('div')
     sidebar.classList.add('rs-sidebar');
 
+    //create 3 elements
     const el1 = document.createElement('div');
     el1.classList.add('rs-sidebar-button1');
     el1.innerText = 'Home';
@@ -26,16 +23,16 @@ function createSidebar(){
     el3.classList.add('rs-sidebar-button3');
     el3.innerText = 'Contact';
 
+    // append elements
     sidebar.appendChild(el1);
     sidebar.appendChild(el2);
     sidebar.appendChild(el3);
 
-    return sidebar;    
-}
-
-function createMain(){
-    const main = document.createElement('div');
+    // create main
+    let main = document.createElement('div');
     main.classList.add('rs-main');
     
-    return main;
-};
+    content.append(sidebar);
+    content.append(main);
+}
+
