@@ -16,18 +16,28 @@
 .rs-sidebar {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 10%;
     background-color: aliceblue;
     margin-left: 1em;
 }
+
+.rs-sidebar-button {
+  margin-bottom: 1em;
+}
+
+
 
 /* ------ MAIN -------- */
 
 .rs-main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 90%;
     background-color: wheat;
+    padding: 0em 2em 0em 2em;
 }
 
 /* ------ MAIN HOME -------- */
@@ -36,17 +46,25 @@
   display: flex;
   flex-direction: column;
   margin-left: 1em;
+  justify-content: center;
+}
+
+.home-title {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.home-sales-info {
+  margin-bottom: 2em;
 }
 
 .home-sales {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 3em;
+  grid-gap: 1em;
 }
 
 .sales-card {
-  width: 30%;
-  height: 100%;
   border-radius: 25px;
   padding: 1em 1em 1em 1em;
   background-color: var(--cardbg)

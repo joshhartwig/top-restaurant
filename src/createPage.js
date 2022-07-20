@@ -1,7 +1,3 @@
-// TODO: When user clicks on Home, About, or Contact
-// TODO: Main should change... i think we can handle this a few ways
-// TODO: 1, create 3 divs inside main, one for home about and contact and set display:none and change that setting
-// TODO: create a function called setMain('home'); when home is clicked, it sets a global as 'home' and the main dom is cleared and contents of home are auto generated
 
 export function createPage(){
     let content = document.querySelector("#content");
@@ -12,21 +8,21 @@ export function createPage(){
 
     //create 3 elements
     const el1 = document.createElement('div');
-    el1.classList.add('rs-sidebar-button1');
+    el1.classList.add('rs-sidebar-button');
     el1.onclick = function() {
         setMainPage('home');
     }
     el1.innerText = 'Home';
 
     const el2 = document.createElement('div');
-    el2.classList.add('rs-sidebar-button2');
+    el2.classList.add('rs-sidebar-button');
     el2.onclick = function() {
         setMainPage('about');
     }
     el2.innerText = 'About';
 
     const el3 = document.createElement('div');
-    el3.classList.add('rs-sidebar-button3');
+    el3.classList.add('rs-sidebar-button');
     el3.onclick = function() {
         setMainPage('contact');
     }
