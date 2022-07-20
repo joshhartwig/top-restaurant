@@ -1,7 +1,10 @@
 /* ------ GENERAL -------- */
 :root {
-    font-size: 16px;
+    font-size: 22px;
     --cardbg: red;
+    --mainbg: wheat;
+    --sidebg: blue;
+    --bg: yellow;
 }
 
 #content {
@@ -35,9 +38,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 90%;
     background-color: wheat;
-    padding: 0em 2em 0em 2em;
+    padding: 0em 3em 0em 3em;
 }
 
 /* ------ MAIN HOME -------- */
@@ -47,6 +51,7 @@
   flex-direction: column;
   margin-left: 1em;
   justify-content: center;
+  align-items: center;
 }
 
 .home-title {
@@ -54,18 +59,39 @@
   text-align: center;
 }
 
+.home-title-para {
+  font-size: 2em;
+}
+
 .home-sales-info {
+  width: 50%;
   margin-bottom: 2em;
 }
 
 .home-sales {
+  width: 50%;
+  display: flex;
   display: grid;
   grid-template-columns: repeat(3,1fr);
   grid-gap: 1em;
 }
 
 .sales-card {
+  border: 2px solid black;
   border-radius: 25px;
   padding: 1em 1em 1em 1em;
   background-color: var(--cardbg)
+}
+
+/* ------ ABOUT HOME -------- */
+
+.rs-about-title {
+  margin-bottom: 3em;
+  font-size: 2em;
+}
+
+/* ------ CONTACT HOME -------- */
+
+.rs-contact-para {
+  margin-bottom: 3em;
 }
