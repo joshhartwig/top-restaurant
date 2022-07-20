@@ -1,11 +1,53 @@
+/* ------ GENERAL -------- */
 :root {
     font-size: 16px;
+    --cardbg: red;
 }
+
+#content {
+  display: flex;
+  margin-top: 2em;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ------ SIDEBAR -------- */
 
 .rs-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
     background-color: aliceblue;
+    margin-left: 1em;
 }
 
+/* ------ MAIN -------- */
+
 .rs-main {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
     background-color: wheat;
+}
+
+/* ------ MAIN HOME -------- */
+
+.rs-main-home {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1em;
+}
+
+.home-sales {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 3em;
+}
+
+.sales-card {
+  width: 30%;
+  height: 100%;
+  border-radius: 25px;
+  padding: 1em 1em 1em 1em;
+  background-color: var(--cardbg)
 }
