@@ -1,10 +1,18 @@
+/* https://coolors.co/palette/5f0f40-9a031e-fb8b24-e36414-0f4c5c */
 /* ------ GENERAL -------- */
 :root {
-    font-size: 22px;
-    --cardbg: red;
+    font-size: 16px;
+    --cardbg: #E36414;
     --mainbg: wheat;
-    --sidebg: blue;
-    --bg: yellow;
+    --sidebarbg: #0F4C5C;
+    --bg: #FB8B24;
+    --fontcolormain: #5F0F40;
+    --fontcolorsidebar: white;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fontcolormain)
 }
 
 #content {
@@ -22,12 +30,18 @@
     justify-content: center;
     align-items: center;
     width: 10%;
-    background-color: aliceblue;
-    margin-left: 1em;
+    background-color: var(--sidebarbg);
+    padding-left: 1em;
 }
 
 .rs-sidebar-button {
   margin-bottom: 1em;
+  color: var(--fontcolorsidebar);
+}
+
+.rs-sidebar-text {
+  color: var(--fontcolorsidebar);
+  font-size: 1.5em;
 }
 
 
@@ -40,7 +54,6 @@
     justify-content: center;
     align-items: center;
     width: 90%;
-    background-color: wheat;
     padding: 0em 3em 0em 3em;
 }
 
@@ -64,7 +77,7 @@
 }
 
 .home-sales-info {
-  width: 50%;
+  width: 80%;
   margin-bottom: 2em;
 }
 

@@ -12,21 +12,21 @@ export function createPage(){
     el1.onclick = function() {
         setMainPage('home');
     }
-    el1.innerText = 'Home';
+    el1.innerHTML = `<span class="rs-sidebar-text">Home</span>`;
 
     const el2 = document.createElement('div');
     el2.classList.add('rs-sidebar-button');
     el2.onclick = function() {
         setMainPage('about');
     }
-    el2.innerText = 'About';
+    el2.innerHTML = `<span class="rs-sidebar-text">About</span>`;
 
     const el3 = document.createElement('div');
     el3.classList.add('rs-sidebar-button');
     el3.onclick = function() {
         setMainPage('contact');
     }
-    el3.innerText = 'Contact';
+    el3.innerHTML = `<span class="rs-sidebar-text">Contact</span>`;
 
     // append elements
     sidebar.appendChild(el1);
@@ -51,7 +51,7 @@ export function setMainPage(section){
         <div class="rs-main-home">
       <div class="home-title">
         <p class="home-title-para">
-          laoreet id donec
+          Bob's Steaks and Fine Wine
         </p>
       </div>
       <div class="home-sales-info">
