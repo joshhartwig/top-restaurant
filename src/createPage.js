@@ -53,6 +53,7 @@ export function setMainPage(section){
         <p class="home-title-para">
           Bob's Steaks and Fine Wine
         </p>
+        <img class="steak-img" src="./img/tomahawk.png">
       </div>
       <div class="home-sales-info">
         <p class="home-sales-para">
@@ -61,22 +62,22 @@ export function setMainPage(section){
       </div>
       <div class="home-sales">
         <div class="sales-card">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae justo eget magna fermentum iaculis eu non.
+          Burger $12
         </div>
         <div class="sales-card">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames.
+          Tomohawk Waygu Medium $75
         </div>
         <div class="sales-card">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames.
+          Texas Sirloin $22
         </div>
         <div class="sales-card">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames.
+          Porkchop $31
         </div>
         <div class="sales-card">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames.
+          Aged Ribeye $33
         </div>
         <div class="sales-card">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Habitant morbi tristique senectus et netus et malesuada fames.
+          Braised Lamb Shank $43
         </div>
       </div>
     </div>`;
@@ -86,12 +87,14 @@ export function setMainPage(section){
         let main = document.querySelector("#main");
         main.innerHTML = 
         `
+        <div class="rs-about-container">
         <p class="rs-about-title">
         About Us
       </p>
       <p class="rs-about">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p> 
+      </div>
         `;
     }
 

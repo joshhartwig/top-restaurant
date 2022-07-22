@@ -2,11 +2,12 @@
 /* ------ GENERAL -------- */
 :root {
     font-size: 16px;
-    --cardbg: #E36414;
+    font-family: 'Roboto Condensed', sans-serif;
+    --cardbg: black;
     --mainbg: wheat;
-    --sidebarbg: #0F4C5C;
-    --bg: #FB8B24;
-    --fontcolormain: #5F0F40;
+    --topbarbg: black;
+    --bg: black;
+    --fontcolormain: white;
     --fontcolorsidebar: white;
 }
 
@@ -17,7 +18,7 @@ body {
 
 #content {
   display: flex;
-  margin-top: 2em;
+  flex-direction: column;
   height: 100vh;
   width: 100vw;
 }
@@ -26,22 +27,20 @@ body {
 
 .rs-sidebar {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 10%;
-    background-color: var(--sidebarbg);
-    padding-left: 1em;
+    background-color: var(--topbarbg);
 }
 
 .rs-sidebar-button {
-  margin-bottom: 1em;
+  padding: 1em 1em 4em 2em;
   color: var(--fontcolorsidebar);
 }
 
 .rs-sidebar-text {
   color: var(--fontcolorsidebar);
   font-size: 1.5em;
+  padding: 1em 1em 1em 1em;
 }
 
 
@@ -53,7 +52,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
     padding: 0em 3em 0em 3em;
 }
 
@@ -62,7 +60,6 @@ body {
 .rs-main-home {
   display: flex;
   flex-direction: column;
-  margin-left: 1em;
   justify-content: center;
   align-items: center;
 }
@@ -77,8 +74,8 @@ body {
 }
 
 .home-sales-info {
-  width: 80%;
-  margin-bottom: 2em;
+  width: 50%;
+  margin-bottom: 3em;
 }
 
 .home-sales {
@@ -89,14 +86,26 @@ body {
   grid-gap: 1em;
 }
 
+.steak-img {
+  max-width: 50%;
+  height: auto;
+}
+
 .sales-card {
-  border: 2px solid black;
-  border-radius: 25px;
-  padding: 1em 1em 1em 1em;
-  background-color: var(--cardbg)
+  border: .5px dotted white;
+  border-radius: 0px;
+  height: 3em;
+  padding: 3em 1em 1em 1em;
+  background-color: var(--cardbg);
+  text-align: center;
 }
 
 /* ------ ABOUT HOME -------- */
+
+.rs-about-container {
+  width: 50%;
+  text-align: center;
+}
 
 .rs-about-title {
   margin-bottom: 3em;
